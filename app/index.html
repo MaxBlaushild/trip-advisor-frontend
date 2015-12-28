@@ -10,12 +10,14 @@
   </head>
 
   <body>
+    <base href="/">
     <trip-advisor></trip-advisor>
   </body>
 
+  <script>baseElement = document.querySelector('base');baseElement.attr = baseElement.getAttribute;</script>
   <script>
   System.import('reflect-metadata').then(function() {
-    System.import('main')
+    System.import('boot')
       .then(null, console.error.bind(console));
   });
   </script>
