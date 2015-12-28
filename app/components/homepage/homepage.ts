@@ -1,3 +1,5 @@
+/// <reference path="../../../typings/tsd.d.ts" />
+
 import 'rxjs/add/operator/map';
 
 import { Trip } from '../../models/trip';
@@ -11,19 +13,10 @@ import { Component, View, OnInit } from 'angular2/core';
 })
 
 @View({
-  styles: [`
-    .list-title { font-weight: bold; text-decoration: underline; }
-    .selected { background-color: #FF0000; }
-  `],
-  template: `
-    <h1>Trip Advisor</h1>
-    <br>
-    <h2>Trips</h2>
-    <ul>
-      <li *ngFor="#trip of trips">{{trip.Title}}: {{trip.Summary}}</li>
-    </ul>
-    `
+  styleUrls: ['./components/homepage/homepage.css'],
+  templateUrl: './components/homepage/homepage.html'
 })
+
 export class HomepageComponent implements OnInit {
   public selectedTrip: Trip;
   public trips: Trip[] = [];
@@ -31,16 +24,16 @@ export class HomepageComponent implements OnInit {
   constructor( @Inject(TripsService) private tripsService: TripsService) { }
 
   ngOnInit() {
-      this.getTrips();
+    this.getTrips();
   }
 
   private getTrips() {
-      this.tripsService.fetchTrips()
-          .map(r => r.json())
-          .subscribe(
-          data => this.setTrips(data),
-          err => console.log(err)
-          );
+    this.tripsService.fetchTrips()
+      .map(r => r.json())
+      .subscribe(
+      data => this.setTrips(data),
+      err => console.log(err)
+    );
   }
 
   private setTrips(trips: Trip[]) {
@@ -51,11 +44,11 @@ export class HomepageComponent implements OnInit {
       this.selectedTrip = trip;
   }
 
-  public isSelectedChapter(trip: Trip) {
-      if (trip === this.selectedTrip) {
-          return true;
-      } else {
-          return false;
-      }
+  public isSelectedTrip(trip: Trip) {
+    if (trip === this.selectedTrip) {
+        return true;
+    } else {
+        return false;
+    }
   }
 }
