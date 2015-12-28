@@ -1,0 +1,1 @@
+angular.module("templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("views/home.html","<h1>Trip Advisor</h1>\n<br>\n<h2>Trips</h2>\n<ul>\n  <li *ngFor=\"#trip of trips\">{{trip.Title}}: {{trip.Summary}}</li>\n</ul>\n\n");}]);

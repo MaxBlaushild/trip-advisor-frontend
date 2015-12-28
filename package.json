@@ -1,25 +1,69 @@
 {
-  "name": "angular2-quickstart",
-  "version": "1.0.0",
-  "scripts": {
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "lite": "lite-server",
-    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
-  },
-  "license": "ISC",
-  "dependencies": {
-    "angular2": "2.0.0-beta.0",
-    "systemjs": "0.19.6",
-    "es6-promise": "^3.0.2",
-    "es6-shim": "^0.33.3",
-    "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.0",
-    "zone.js": "0.5.10"
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "angular2": "npm:angular2@2.0.0-beta.0",
+      "babel": "npm:babel-core@5.2.17",
+      "babel-core": "npm:babel-core@5.2.17",
+      "babel-runtime": "npm:babel-runtime@5.1.13",
+      "checklist-model": "npm:checklist-model@0.2.4",
+      "clean-css": "npm:clean-css@3.4.5",
+      "core-js": "npm:core-js@0.9.7",
+      "es6-promise": "npm:es6-promise@3.0.2",
+      "es6-shim": "npm:es6-shim@0.33.13",
+      "lodash": "npm:lodash@3.10.0",
+      "reflect-metadata": "npm:reflect-metadata@0.1.2",
+      "requirejs-browser": "npm:requirejs-browser@2.1.9",
+      "rxjs": "npm:rxjs@5.0.0-beta.0",
+      "zone.js": "npm:zone.js@0.5.10"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
   },
   "devDependencies": {
-    "concurrently": "^1.0.0",
-    "lite-server": "^1.3.1",
-    "typescript": "^1.7.3"
+    "angular2": "^2.0.0-beta.0",
+    "babel": "^5.1.13",
+    "body-parser": "^1.12.3",
+    "del": "^2.0.2",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.13",
+    "express": "^4.13.3",
+    "gulp": "^3.8.11",
+    "gulp-angular-templatecache": "^1.6.0",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-html-replace": "^1.4.5",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-nodemon": "^2.0.3",
+    "gulp-plumber": "^1.0.0",
+    "gulp-rev": "^6.0.1",
+    "gulp-rev-replace": "^0.4.2",
+    "gulp-rsync": "0.0.5",
+    "gulp-sass": "^2.1.0",
+    "gulp-sftp": "^0.1.5",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-tslint": "^3.0.1-beta",
+    "gulp-typescript": "^2.6.0",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.4",
+    "gulp-watch": "^4.2.4",
+    "http-proxy": "^1.11.1",
+    "jspm": "^0.15.5",
+    "morgan": "^1.5.2",
+    "reflect-metadata": "^0.1.2",
+    "rev-del": "^1.0.5",
+    "rxjs": "^5.0.0-beta.0",
+    "serve-favicon": "^2.2.0",
+    "serve-index": "^1.6.3",
+    "typescript": "^1.5.0-beta",
+    "url": "^0.11.0",
+    "util": "^0.10.3",
+    "zone.js": "^0.5.10"
+  },
+  "dependencies": {
+    "angular-local-storage": "^0.2.2"
   }
 }

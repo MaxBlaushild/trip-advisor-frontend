@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Trip Advisor</title>
+    <!-- build:js -->
+    <script src="jspm_packages/system.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="config.js"></script>
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <trip-advisor></trip-advisor>
+  </body>
+
+  <script>
+  System.import('reflect-metadata').then(function() {
+    System.import('main')
+      .then(null, console.error.bind(console));
+  });
+  </script>
+</html>
