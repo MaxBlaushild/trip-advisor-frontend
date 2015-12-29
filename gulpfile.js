@@ -12,15 +12,7 @@ var revDel     = require('rev-del');
 var del        = require('del');
 var uglify     = require('gulp-uglify');
 var $          = require('gulp-load-plugins')({lazy: true});
-
-var tsProject = $.typescript.createProject({
-    declarationFiles: true,
-    noExternalResolve: true,
-    module: 'amd',
-    typescript: require('typescript'),
-    target: 'ES5'
-});
-
+var tscConfig  = require('./tsconfig.json');
 
 gulp.task('tslint', function(){
       gulp.src(conf.src.tslint)
@@ -35,7 +27,7 @@ gulp.task('typescript', function () {
     var tsResult = gulp.src(conf.src.ts)
         .pipe($.plumber())
         .pipe($.sourcemaps.init())
-        .pipe($.typescript(tsProject));
+        .pipe($.typescript(tscConfig.compilerOptions));
 
     return tsResult.js
         .pipe($.sourcemaps.write('./', {

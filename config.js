@@ -25,7 +25,6 @@ System.config({
     "es6-promise": "npm:es6-promise@3.0.2",
     "es6-shim": "npm:es6-shim@0.33.13",
     "lodash": "npm:lodash@3.10.0",
-    "ng2-bootstrap": "npm:ng2-bootstrap@1.0.0-beta.1",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
     "requirejs-browser": "npm:requirejs-browser@2.1.9",
     "rxjs": "npm:rxjs@5.0.0-beta.0",
@@ -86,9 +85,6 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:angular-animate@1.4.7": {
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
     "npm:angular2@2.0.0-beta.0": {
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "es6-promise": "npm:es6-promise@3.0.2",
@@ -97,9 +93,6 @@ System.config({
       "reflect-metadata": "npm:reflect-metadata@0.1.2",
       "rxjs": "npm:rxjs@5.0.0-beta.0",
       "zone.js": "npm:zone.js@0.5.10"
-    },
-    "npm:angular@1.4.7": {
-      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:asn1.js@4.2.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",

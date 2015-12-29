@@ -1,5 +1,3 @@
-/// <reference path="../../../typings/tsd.d.ts" />
-
 import 'rxjs/add/operator/map';
 
 import { Trip } from '../../models/trip';

@@ -1,5 +1,3 @@
-/// <reference path="../typings/tsd.d.ts" />
-
 import { Component, Inject } from 'angular2/core';
 import { HomepageComponent } from './components/homepage/homepage';
 import { MenuWidgetComponent } from './components/menuWidget/menuWidget';
